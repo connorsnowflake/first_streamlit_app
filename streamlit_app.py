@@ -33,7 +33,15 @@ streamlit.header("Fruityvice Fruit Advice!")
 
 
 
+# write your own comment -what does the next line do? 
+# i think it normalizes the json file?
 
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+
+# write your own comment - what does this do?
+# makes it into a dataframe?
+
+streamlit.dataframe(fruityvice_normalized)
 
 
 
